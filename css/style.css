@@ -1,10 +1,23 @@
+/*Estilos Gerais*/
 
+body{
+	font-family:  Arial, Helvetica, sans-serif;
+}
+
+p{
+ 	font-family: Georgia, "Times New Roman", serif;
+ 	line-height: 20px;
+ 	font-size: 14px;
+}
+
+/*Header*/
 
 .header{
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background:blue; 	
+	background:#1b82b3; 	
+	padding: 10px 0;
 }
 
 .header_menu{
@@ -12,9 +25,53 @@
 }
 
 .header_menu ul li{
-display: inline-block;
+	display: inline-block;
+	margin-top: 20px;
+	position: relative;
+	margin-right: 50px;
 }
 
+.header_menu ul li a{
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 0;
+}
+
+.header_logo{
+text-align:center;
+}
+
+/*Introdução*/
+
+.introducao{
+	width: 100%;
+	background: url(../img/foto-intro.jpg) no-repeat center;
+	background-size: cover;
+	margin-top: 86px;
+	height: 380px;
+	text-align: center;
+	padding-top: 120px; 
+}
+
+.introducao h1{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 48px;
+	text-transform: uppercase;
+}
+
+.introducao h1:before, .introducao h1:after {
+	content:"";
+	display: block;
+	width: 60px;
+	height: 5px;
+	background: #FFF;
+	margin: 10px auto;
+}
 /* GRID 16*/
 
 
