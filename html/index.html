@@ -3,7 +3,13 @@
 	<head>
 		<title>Fodon</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="..\css\style.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<script type="text/javascript" src="../js/jquery-3.3.1.min"></script>
+		<script type="text/javascript" src="../js/jquery.validate.min"></script>
+		<script type="text/javascript" src="../js/messages_pt_BR.min"></script>
+		<script type="text/javascript" src="../js/valida.js"></script>
+		
+
 	</head>
 	<body>
 		<!-- cabeçalho-->
@@ -32,42 +38,42 @@
 		<!-- Formulário 1-->
 		<section class="container">
 			<h1>Identificação do Paciente</h1>
-			<form action="" method="get">
+			<form name="pag1" action="teste.php" method="post">
 				<input id="nome" type="text" name="nome" placeholder="Digite seu nome">
 
-				<input id="data-nasc" type="date" name="data-nasc">
+				<input type="date" name="data-nasc">
 
-				<input id="sexo-masc" type="radio" name="masculino">
-				<label for="sexo-masc">Masculino</label>
+				<input type="radio" name="sexo" value="masc">
+				<label for="masc">Masculino</label>
 
-				<input id="sexo-fem" type="radio" name="feminino">
-				<label for="sexo-fem">Feminino</label>
+				<input type="radio" name="sexo"value="fem">
+				<label for="fem">Feminino</label>
 
-				<input id="rg" type="text" name="rg" placeholder="Digite seu RG">
+				<input type="text" name="rg" placeholder="Digite seu RG">
 
-				<input id="data-rg" type="date" name="data-rg">
+				<input type="date" name="data-rg">
 
-				<input id="org" type="text" name="org" placeholder="Orgão">
+				<input type="text" name="org" placeholder="Orgão">
 
-				<input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF">
+				<input type="text" name="cpf" placeholder="Digite seu CPF">
 
-				<input id="est-civ" type="text" name="est-civ" placeholder="Estado Civil">
+				<input type="text" name="est-civ" placeholder="Estado Civil">
 
-				<input id="pai" type="text" name="pai" placeholder="Digite o nome do seu Pai">
+				<input type="text" name="pai" placeholder="Digite o nome do seu Pai">
 
-				<input id="mae" type="text" name="mae" placeholder="Digite o nome da sua Mãe">
+				<input type="text" name="mae" placeholder="Digite o nome da sua Mãe">
 
-				<input id="end" type="text" name="endereco" placeholder="Digite seu Endereço">
+				<input type="text" name="ender" placeholder="Digite seu Endereço">
 
-				<input id="bair" type="text" name="bairro" placeholder="Digite seu Bairro">
+				<input type="text" name="bair" placeholder="Digite seu Bairro">
 
-				<input id="est-uf" type="text" name="estado" placeholder="Digite seu Estado/UF">
+				<input type="text" name="est-uf" placeholder="Digite seu Estado/UF">
 
-				<input id="cep" type="text" name="cep" placeholder="Digite seu CEP">
+				<input type="text" name="cep" placeholder="Digite seu CEP">
 
-				<input id="telef" type="text" name="telefone" placeholder="Telefone para Contato">
+				<input type="text" name="telef" placeholder="Telefone para Contato">
 
-				<input type="submit" value="Próximo">
+				<input type="submit" value="Próximo" onclick="">
 			</form>
 		</section>	
 		<div>
